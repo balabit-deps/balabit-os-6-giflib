@@ -1,3 +1,5 @@
 03-spelling_fixes.patch
 #04-fprintf_format_error.patch
 issue87.diff
+CVE-2018-11490.patch
+CVE-2019-15133.patch

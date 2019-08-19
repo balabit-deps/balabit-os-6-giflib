@@ -1,3 +1,17 @@
+giflib (5.1.4-0.3~16.04.1) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: Denial of service
+    - debian/patches/CVE-2018-11490.patch: adding checks
+      in DGifDecompressLine in order to avoid a heap buffer overflow and
+      a denial of service in lib/dgif_lib.c.
+    - CVE-2018-11490
+  * SECURITY UPDATE: Divide-by-zero
+    - debian/patches/CVE-2019-15133.patch: adding checks bounds
+      in lib/dgif_lib.c.
+    - CVE-2019-15133
+
+ -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Mon, 19 Aug 2019 15:21:52 -0300
+
 giflib (5.1.4-0.3~16.04) xenial-proposed; urgency=medium
 
   * SRU: LP: #1580376: Upload bug fix release for 16.04 LTS.
